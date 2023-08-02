@@ -1,0 +1,93 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+body{
+  display: flex;
+  justify-content: center;
+}
+
+#root{
+  height: 100vh;
+}
+
+/* TOASTERS */
+
+.positionedToaster {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+}
+
+/* TODO APP */
+
+.todo_app{
+  border: 5px solid #f4d579;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 50px;
+}
+
+h1{
+  text-shadow: 1px 1px 1px rgb(163, 163, 163);
+}
+
+.ToDo_btn {
+  margin-left: 15px;
+}
+
+ul.no-bullets {
+  list-style-type: none;
+  padding: 0;
+  /* Remove padding */
+  margin: 0;
+  /* Remove margins */
+}
+
+.ToDo_div {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ToDo_li {
+  width: 100%;
+  max-width: 450px;
+  overflow: hidden;
+  background-color: #FFC107;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1px 5px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.ToDo_li:hover{
+  background-color: #fdd14e
+}
+
+.ToDo_li:active{
+  cursor: grab!important;
+}
+
+i.bi-x-square {
+  cursor: pointer;
+}
+
+li div:first-child{
+  overflow: hidden;
+}
+
+.dragged{
+  position: absolute;
+  opacity: 0.6;
+}
+
+.todoListContainer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow-y: hidden; 
+}
